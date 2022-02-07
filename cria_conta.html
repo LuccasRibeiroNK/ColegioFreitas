@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Crie uma conta</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a id="vtIndex" href="./area_secretaria.html">Voltar ao menu</a>
+            <h1>Crie uma conta</h1>
+        </header>
+        <div class="inputs-singin">
+            <input type="text" class="primeiroNome" placeholder="Primeiro nome">
+            <input type="text" class="ultimoNome" placeholder="Sobrenome">
+            <input type="email" class="email" placeholder="Email">
+            <input type="password" class="senha" placeholder="Senha">
+            <select id="cargoId">
+                <option value="Diretor">Diretor</option>
+                <option value="Secretario">Secretário</option>
+                <option value="Professor">Professor</option>
+            </select>
+        </div>
+        <div class="botoes">
+            <button class="btn">Continuar</button>
+        </div>
+        <div class="confirma">
+            <p></p>
+        </div>
+        <div class="confirmaAlerta">
+            <p></p>
+        </div>
+        <div class="recuperarSenha">
+            <a href="./index.html">Já tem uma conta? Entrar</a>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="./script/cadastro_funcionario.js" type="module"></script>
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>

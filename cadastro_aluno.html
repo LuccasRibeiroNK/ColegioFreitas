@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de aluno</title>
+    <link rel="stylesheet" href="./style/styleCadastro.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a id="vtIndex" href="./area_secretaria.html">Voltar ao menu</a>
+            <h1>Cadastre um novo aluno</h1>
+        </header>
+        <div class="inputs-cadastro">
+            <input type="text" placeholder="Nome do aluno" class="nomeAluno">
+            <select name="Turma" id="turmasSelect"> </select>
+            <input type="text" placeholder="Endereço" class="endereco">
+            <input type="date" placeholder="Idade" class="dataNascimento">
+            <input type="text" placeholder="RG/CPF" class="registro">
+        </div>
+        <div class="botoes">
+            <button class="btn">Cadastrar</button>
+        </div>
+        <footer>
+            <div class="recuperarSenha">
+            </div>
+        </footer>
+        <div class="confirma">
+            <p></p>
+        </div>
+        <button type="reset" onclick="window.location.href='./cadastro_aluno.html'">OK</button>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="script/cadastro_aluno.js" type="module"></script>
+    <!-- <script src="./scritps/criaUsuarioFirebase.js" type="module"></script> -->
+
+</body>
+
+</html>
