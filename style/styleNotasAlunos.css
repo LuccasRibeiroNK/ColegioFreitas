@@ -41,40 +41,6 @@ h1 {
     font-size: 40px;
 }
 
-.recuperarSenha {
-    text-align: center;
-}
-
-.recuperarSenha a {
-    position: relative;
-    display: inline-block;
-    color: #959595;
-    font-size: 10px;
-    /* text-decoration: none; */
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    letter-spacing: 3px
-}
-
-.recuperarSenha p {
-    /* position: relative; */
-    display: inline;
-    color: #959595;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px
-}
-
-footer {
-    position: absolute;
-    flex-direction: row;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 0.5rem;
-}
-
-
 input {
     flex-direction: row;
     text-indent: 10px;
@@ -91,18 +57,17 @@ input {
     background-color: #555C5C;
 }
 
-
+.cab {
+    text-align: end;
+    font-size: 20px;
+}
 
 .container #vtIndex {
     color: #959595;
     text-decoration: underline;
     text-align: center;
-    font-size: 10px;
+    font-size: 18px;
 }
-
-
-
-
 
 select {
     width: 49%;
@@ -136,4 +101,37 @@ select {
 
 .confirma {
     color: #04AA6D;
+}
+
+.recuperarSenha {
+    text-align: center;
+}
+
+.recuperarSenha a {
+    position: relative;
+    display: inline-block;
+    color: #959595;
+    font-size: 16px;
+    /* text-decoration: none; */
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px
+}
+
+.recuperarSenha p {
+    /* position: relative; */
+    display: inline;
+    color: #959595;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+footer {
+    position: absolute;
+    flex-direction: row;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }

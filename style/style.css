@@ -9,6 +9,12 @@ body {
     background: linear-gradient(#141e30, #243b55);
 }
 
+#btnVolat #vitIndex {
+    text-decoration: none;
+    color: #04AA6D;
+    font-size: 2022px;
+}
+
 
 /* General styles */
 .container {
@@ -22,11 +28,18 @@ body {
     border-radius: 10px;
 }
 
+.cab {
+    text-align: end;
+    font-size: 20px;
+}
+
 #btnVoltar {
     width: 22%;
     padding: 9px 0;
     background: #fff;
-
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #btnVoltar:hover {
@@ -34,21 +47,26 @@ body {
     color: #000;
 }
 
-#btnVoltar a {
-    font-size: 4px;
-}
+
+
 
 .container button {
     width: 100%;
     padding: 19px 0;
-    font-size: 16px;
+    font-size: 20px;
     color: #555C5C;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     border-radius: 6px;
     border-bottom: 1px solid #fff;
     outline: none;
     cursor: pointer;
+    margin-bottom: 20px;
 
+}
+
+.container button:hover {
+    background: #555C5C;
+    color: #fff;
 }
 
 h1 {

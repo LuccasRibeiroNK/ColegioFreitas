@@ -18,7 +18,7 @@ auth.onAuthStateChanged(function (user) {
     if (user) {
         console.log("Usuário logado: ", user.email);
         db.collection("funcionariosCadastrados").doc(user.email).get().then(function (doc) {
-            document.querySelector(".confirma").innerHTML = `<p>Olá, ${doc.data().primeiroNome}</p>`;
+            document.querySelector(".confirma").innerHTML = `<p>Usuário: ${doc.data().primeiroNome}</p>`;
         });
     } else {
         console.log("Nenhum usuário logado");

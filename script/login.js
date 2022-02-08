@@ -37,7 +37,7 @@ function loginUsuario() {
         if (user) {
             db.collection("funcionariosCadastrados").get().then(function (querySnapshot) {
                 querySnapshot.forEach(function (doc) {
-                    document.querySelector(".confirma").innerHTML = `<p>Olá, ${doc.data().primeiroNome}</p>`;
+                    document.querySelector(".confirma").innerHTML = `<p>Usuário loggado: ${doc.data().primeiroNome}</p>`;
                     window.location.href = "./area_secretaria.html";
                 });
             });

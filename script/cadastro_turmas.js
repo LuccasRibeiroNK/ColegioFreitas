@@ -19,6 +19,18 @@ btn.addEventListener("click", cadastraTurmas);
 let newTurmaNome = document.querySelector(".turma");
 let newAnoTurma = document.querySelector(".ano");
 
+// imprime usuário logado
+auth.onAuthStateChanged(function (user) {
+    if (user) {
+        console.log("Usuário logado: ", user.email);
+        db.collection("funcionariosCadastrados").doc(user.email).get().then(function (doc) {
+            document.querySelector(".confirma").innerHTML = `<p>Usuário: ${doc.data().primeiroNome}</p>`;
+        });
+    } else {
+        console.log("Nenhum usuário logado");
+    }
+});
+
 function cadastraTurmas() {
     let nome = newTurmaNome.value.toUpperCase();
     let ano = newAnoTurma.value + "º";
