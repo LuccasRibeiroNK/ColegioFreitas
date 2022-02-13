@@ -2,6 +2,14 @@ html {
     height: 100%;
 }
 
+.cab {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -18,11 +26,6 @@ body {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, .6);
     border-radius: 10px;
-}
-
-.cab {
-    text-align: end;
-    font-size: 20px;
 }
 
 .container button {
